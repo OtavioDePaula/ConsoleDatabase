@@ -3,7 +3,7 @@ using System;
 using System.Configuration;
 using System.Data;
 
-namespace ConsoleDatabase
+namespace AppDatabaseADO
 {
     public class Database : IDisposable
     {
@@ -23,7 +23,7 @@ namespace ConsoleDatabase
                 CommandType = CommandType.Text,
                 Connection = conexao
             };
-            command.ExecuteNonQuery();   
+            command.ExecuteNonQuery();
         }
 
         public MySqlDataReader ReturnCommand(string query)
@@ -34,8 +34,8 @@ namespace ConsoleDatabase
 
         public void Dispose()
         {
-            if(conexao.State == ConnectionState.Open)
-            conexao.Close();
+            if (conexao.State == ConnectionState.Open)
+                conexao.Close();
         }
     }
 }

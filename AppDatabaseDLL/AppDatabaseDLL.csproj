@@ -4,12 +4,12 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{36DC1452-4EA4-4F07-B703-0355FC2DC411}</ProjectGuid>
+    <ProjectGuid>{5A6EFA63-C944-4104-88C2-DF6F6491B7FF}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>AppDatabaseDLL</RootNamespace>
     <AssemblyName>AppDatabaseDLL</AssemblyName>
-    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
   </PropertyGroup>
@@ -47,7 +47,7 @@
       <HintPath>..\packages\K4os.Hash.xxHash.1.0.6\lib\net46\K4os.Hash.xxHash.dll</HintPath>
     </Reference>
     <Reference Include="MySql.Data, Version=8.0.28.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
-      <HintPath>..\packages\MySql.Data.8.0.28\lib\net48\MySql.Data.dll</HintPath>
+      <HintPath>..\packages\MySql.Data.8.0.28\lib\net452\MySql.Data.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
@@ -77,10 +77,10 @@
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Xml" />
     <Reference Include="Ubiety.Dns.Core, Version=2.2.1.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
-      <HintPath>..\packages\MySql.Data.8.0.28\lib\net48\Ubiety.Dns.Core.dll</HintPath>
+      <HintPath>..\packages\MySql.Data.8.0.28\lib\net452\Ubiety.Dns.Core.dll</HintPath>
     </Reference>
     <Reference Include="ZstdNet, Version=1.4.5.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
-      <HintPath>..\packages\MySql.Data.8.0.28\lib\net48\ZstdNet.dll</HintPath>
+      <HintPath>..\packages\MySql.Data.8.0.28\lib\net452\ZstdNet.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -89,12 +89,12 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\AppDatabaseADO\AppDatabaseADO.csproj">
-      <Project>{54b22871-6d7f-430d-9f8b-153c41295572}</Project>
+      <Project>{8331560f-bc29-4677-a5ea-2b53bb7dd99c}</Project>
       <Name>AppDatabaseADO</Name>
     </ProjectReference>
-    <ProjectReference Include="..\AppDatabaseDomain\AppDatabaseDomain.csproj">
-      <Project>{aef5a903-eb5e-4a70-b812-32a8dc7325ea}</Project>
-      <Name>AppDatabaseDomain</Name>
+    <ProjectReference Include="..\AppDatabaseDominio\AppDatabaseDominio.csproj">
+      <Project>{1bd4f095-97c1-4259-aa7a-a37db9293936}</Project>
+      <Name>AppDatabaseDominio</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
